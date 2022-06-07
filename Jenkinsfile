@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo '202206071217'
+                timestamp=`date +%Y%m%d%H%M`
+                echo '$timestamp'
             }
         }
     }
