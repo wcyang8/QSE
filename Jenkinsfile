@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'hello hongik'
+                echo %date% %time%
             }
         }
     }
