@@ -4,23 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo '202206071217'
             }
-        }
-        stage('Test') {
-            steps {
-                build 'SeleniumMaven'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
-    post {
-        always {
-            echo "pipeline job done!!"
         }
     }
 }
